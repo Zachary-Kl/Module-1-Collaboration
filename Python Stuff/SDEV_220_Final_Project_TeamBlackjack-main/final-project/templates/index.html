@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poker Room Tables</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <a href="{{ url_for('admin') }}" class="admin-login">
+    Admin Login
+</a>
+    </header>
+
+    <main class="table-grid">
+
+        {% for table in tables %} <!-- this area is creates a clickable link for each table
+                                        that sends the user to join.html
+                                        THIS AREA IS SUBJECT TO CHANGE PLEASE LET EVERYONE ON
+                                        THE TEAM KNOW IF THERE ARE ANY CHANGES MADE TO THIS
+                                        AREA OF index.html-->
+            <a class="poker-table" href="{{ url_for('join', table_name=table.stakes ~ ' ' ~ table.game_type) }}">
+
+                <span>{{ table.stakes }} {{ table.game_type }}</span>
+                
+                <span>{{ table.players | length }}/{{ table.total_seats }} Seats</span>
+
+                <span>{{ table.waitlist | length }} Waiting</span>
+            </a>
+        {% endfor %}
+
+    </main>
+
+</body>
+</html>

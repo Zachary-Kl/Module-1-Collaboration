@@ -1,0 +1,65 @@
+{
+    "tables": [
+        {
+            "id": 1,
+            "game_type": "NL Holdem",
+            "stakes": "1/3",
+            "total_seats": 9,
+            "players": [
+                {
+                    "name": "31231",
+                    "phone_number": "312312"
+                },
+                {
+                    "name": "a",
+                    "phone_number": "2313131311"
+                },
+                {
+                    "name": "a",
+                    "phone_number": "3333333333"
+                }
+            ],
+            "waitlist": []
+        },
+        {
+            "id": 2,
+            "game_type": "NL Holdem",
+            "stakes": "2/5",
+            "total_seats": 9,
+            "players": [],
+            "waitlist": []
+        },
+        {
+            "id": 3,
+            "game_type": "NL Holdem",
+            "stakes": "5/10",
+            "total_seats": 9,
+            "players": [],
+            "waitlist": []
+        },
+        {
+            "id": 4,
+            "game_type": "PLO",
+            "stakes": "1/2",
+            "total_seats": 6,
+            "players": [],
+            "waitlist": []
+        },
+        {
+            "id": 5,
+            "game_type": "PLO",
+            "stakes": "2/5",
+            "total_seats": 6,
+            "players": [],
+            "waitlist": []
+        },
+        {
+            "id": 6,
+            "game_type": "LIMIT Holdem",
+            "stakes": "1/3",
+            "total_seats": 9,
+            "players": [],
+            "waitlist": []
+        }
+    ]
+}
